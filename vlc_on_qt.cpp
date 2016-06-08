@@ -97,9 +97,12 @@ void Player::playFile(QString file)
 
    // _m = libvlc_media_new_path(_vlcinstance, file.toStdString().c_str());
 
-   // _m = libvlc_media_new_location (_vlcinstance, "file://home/jon/qtest/dsa.ts");
 
-    _m = libvlc_media_new_path (_vlcinstance, "/home/jon/qtest/dsa.ts");
+
+//    _m = libvlc_media_new_path (_vlcinstance, "/home/jon/qtest/dsa.ts");
+
+     _m = libvlc_media_new_location (_vlcinstance, "http://192.168.8.1:8083/?action=stream");
+
 
     /* Create a media player playing environement */
  //   mp = libvlc_media_player_new_from_media (m);

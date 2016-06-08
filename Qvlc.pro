@@ -4,6 +4,12 @@
 
 TEMPLATE = app
 TARGET = Qvlc
+
+# install
+target.path = /home/pi
+INSTALLS += target
+
+
 INCLUDEPATH += .
 
 QT += widgets
